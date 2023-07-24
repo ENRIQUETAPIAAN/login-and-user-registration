@@ -14,6 +14,7 @@
     <div class="contenedor">
         <h1 class="titulo">Contenido del sitio</h1>
         <a href="cerrar.php">Cerrar Sesión</a>
+        <hr class="border">
         <div class="contenido">
             <article>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam harum est sunt non necessitatibus modi quo veritatis illum, a vero? Velit perferendis ex atque repellendus quae suscipit quaerat voluptates voluptatem.</p>
