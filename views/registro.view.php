@@ -13,11 +13,13 @@
 </head>
 <body>
     <div class="contenedor">
-        <h1 class="titulo">Contenido del sitio</h1>
+        <h1 class="titulo">Registro</h1>
         <hr class="border">
-        <div class="contenido">
-           
-        </div>
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="formulario" name="login">
+            <div class="form-group">
+                <i class="icon izquierda fa fa-user"></i><iput type="text" name="usuario" class="usuario" placeholder="usuario">
+            </dvi>
+        </form>
     </div>
 </body>
 </html>
