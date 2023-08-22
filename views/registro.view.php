@@ -17,7 +17,7 @@
         <hr class="border">
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="POST" class="formulario" name="login">
             <div class="form-group">
-                <i class="icon izquierda fa fa-user"></i><iput type="text" name="usuario" class="usuario" placeholder="usuario">
+                <i class="icono izquierda fa fa-user"></i><input type="text" name="usuario" class="usuario" placeholder="usuario">
             </dvi>
         </form>
     </div>
