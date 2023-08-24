@@ -9,7 +9,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
     $password = $_POST['password'];
     $password2 = $_POST['password'];
 
-    echo "$usuario . $password . $password2";
+    $errores = '';
+
+    if(empty($usuario) or empty($password) or empty($password2)){
+        $errores .= '<li>Por favor rellena todos los datos correctamente.</li>';
+    } else{
+        try{
+            $conexion = new PDO('mysql:host=localhost;dbname=db_login', 'root', '');
+        } catch(PDOException $e){
+            echo "Error: " . $e->getMessage();
+        }
+
+        $statement = $conexion->prepare('SELECT * FROM tb_usuarios WHERE usuario = :usuario LIMIT 1');
+        $statement->execute(array(':usuario' => $usuario));
+        $resultado =  $statement->fetch();
+
+        if($resultado != false){
+            $errores .= '<li>El nombre de usuario ya existe.</li>';
+        }
+    }
 }
 
 require 'views/registro.view.php';
