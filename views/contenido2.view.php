@@ -9,13 +9,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/estilos.css">
-    <title>Contenido protegido</title>
+    <title>Contenido 2 protegido</title>
 </head>
 <body>
     <div class="contenedor">
-        <h1 class="titulo">Contenido del sitio</h1>
+        <h1 class="titulo">Contenido 2 del sitio</h1>
         <a href="cerrar.php">Cerrar Sesión</a><br>
-        <a href="contenido2.php">Ir al contenido 2</a>
+        <a href="contenido.php">Ir al contenido 1</a>
         <hr class="border">
         <div class="contenido">
             <article>
